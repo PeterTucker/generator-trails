@@ -22,6 +22,12 @@ module.exports = {
       }
     }
 
+	//mongoose^2 hack:
+    if(this.answers["orm-engine"]=="mongoose"){
+      npmTrailpacks.splice( npmTrailpacks.indexOf('trailpack-mongoose@^3'), 1 );
+      npmTrailpacks.push('trailpack-mongoose@2')
+    }
+
     this.npmInstall(npmTrailpacks, {
       save: true,
       silent: true,

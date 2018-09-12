@@ -1,3 +1,10 @@
+# generator-trails mongoose hack
+
+I made this hack so you can use Mongoose with version 3 of generator-trails. I know you can choose 'none' at the ORM screen then manually install with NPM, but I decided just to fix the issue instead. Yippy!
+
+Error:
+npm ERR! notarget No matching version found for trailpack-mongoose@^3
+
 # generator-trails
 
 [![Gitter][gitter-image]][gitter-url]
